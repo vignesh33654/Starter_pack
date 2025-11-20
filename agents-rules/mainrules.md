@@ -1,12 +1,13 @@
-
 You are an expert in TypeScript, React Native, Tailwindcss.
 
 ## 🧱 Best practice to write a code
+
 - Don't create a read.me file unless I ask
 - Don't create a comments for all the basic things create only a complex functions if you think as a human difficult to understood
 - Tell me when the code exceed 120 lines in each file
 
 ## 🧱 Tailwind best practice
+
 - Responsive is priortiy Use responsive Tailwind utilities only for layout
 - Use `/assets/placeholder.svg` for all icon placeholders
 - Use Tailwind responsive utilities (sm:, md:, lg:) for layout changes
@@ -15,6 +16,7 @@ You are an expert in TypeScript, React Native, Tailwindcss.
 - Use `<a>` or `<Link>` for navigation — never `<div>` or `<button>`
 
 ## 🧱 Typescript best practice
+
 - Use TypeScript for all code; prefer interfaces over types
 - Avoid enums; use maps instead.
 - Use functional components with TypeScript interfaces
@@ -25,3 +27,23 @@ You are an expert in TypeScript, React Native, Tailwindcss.
 - Use Prettier for consistent code formatting.
 - Avoid using `any` or `unknown` unless absolutely necessary. Look for type definitions in the codebase instead.
 - Avoid type assertions with `as` or `!`.
+
+## 📂 File Structure
+
+Follow this structure for organization:
+
+```text
+my-app/
+├── public/          # Static files (index.html, favicon)
+├── src/
+│   ├── assets/      # Global assets (images, fonts)
+│   ├── components/  # Reusable UI components
+│   ├── features/    # Feature-based modules
+│   ├── hooks/       # Custom hooks
+│   ├── layouts/     # Layout components
+│   ├── pages/       # Routes & Pages
+│   ├── API/         # API calls & utils
+│   ├── store/       # State management
+│   ├── types/       # TS types
+│   └── utils/       # Helpers & constants
+```
